@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import LoginNavbar from './Components/LoginNavbar';
+import Login from './Pages/Login';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LoginNavbar />
+    <Login/>
   </React.StrictMode>,
   document.getElementById('root')
 );
