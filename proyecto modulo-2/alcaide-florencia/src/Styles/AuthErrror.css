@@ -1,0 +1,9 @@
+.cont-auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-content{
+    display: inline-block;
+}
