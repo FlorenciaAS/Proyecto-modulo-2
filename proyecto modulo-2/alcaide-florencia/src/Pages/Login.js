@@ -7,7 +7,7 @@ function Login(){
     return(
         <div>
             <LoginNavbar/>
-            <AuthError/>
+            <CardLogin/>
         </div>
     )
 }

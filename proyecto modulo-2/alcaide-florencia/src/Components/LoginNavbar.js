@@ -7,7 +7,7 @@ import iconMatea from '../images/LogoSoloBlancoFondoTransparente 1.png'
 
 function LoginNavbar() {
     return(
-        <AppBar  position='static'>
+        <AppBar position='static'>
             <Toolbar>
                 <img src={iconMatea}></img>
                 <Typography variant='h5' align='center'>
