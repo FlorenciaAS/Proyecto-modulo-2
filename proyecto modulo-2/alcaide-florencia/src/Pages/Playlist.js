@@ -1,8 +1,9 @@
 import React from 'react';
+import PlaylistNavbar from '../Components/PlaylistNavbar';
 
 function Playlist (){
     return(
-        <h1>Playlist</h1>
+        <PlaylistNavbar/>
     );
 };
 

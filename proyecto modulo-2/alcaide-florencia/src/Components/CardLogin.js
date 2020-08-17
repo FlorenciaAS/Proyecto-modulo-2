@@ -5,24 +5,21 @@ import {
   Button,
   Typography,
   TextField,
-  Grid
+  Grid,
 } from "@material-ui/core";
 import "../Styles/CardLog.css";
-import padlockIcon from '../images/padlock-icon.png'
-
-
-
+import padlockIcon from "../images/padlock-icon.png";
 
 function CardLogin() {
   return (
-    <Grid   className="principal">
-      <Card className="container" maxWidth="sm"variant="outlined">
-        <CardContent className='cont-card'>
-            <img align='center' src={padlockIcon}></img>
+    <Grid className="principal">
+      <Card className="container" maxWidth="sm" variant="outlined">
+        <CardContent className="cont-card">
+          <img align="center" src={padlockIcon}></img>
           <Typography variant="h5" align="center">
             Ingresar
           </Typography>
-          <form  autoComplete="off">
+          <form autoComplete="off">
             <TextField
               fullWidth
               label="Correo electrónico"
@@ -37,17 +34,17 @@ function CardLogin() {
               />
             </div>
           </form>
-          <Button  variant="contained" fullWidth size="large" color="secondary">
+          <Button variant="contained" fullWidth size="large" color="secondary">
             Comenzar a crear playlist
           </Button>
-          
+
           <div className="button-crear">
-          <Button  color="primary" size="small" fullWidth>
-            ¿Has olvidado la contraseña?
-          </Button>
+            <Button color="primary" size="small" fullWidth>
+              ¿Has olvidado la contraseña?
+            </Button>
           </div>
           <hr />
-          
+
           <Button disabled size="large" fullWidth>
             ¿NO TIENES CUENTA?
           </Button>
