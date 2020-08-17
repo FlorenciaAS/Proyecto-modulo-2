@@ -5,6 +5,7 @@ import {
   Button,
   Typography,
   TextField,
+  Grid
 } from "@material-ui/core";
 import "../Styles/CardLog.css";
 import padlockIcon from '../images/padlock-icon.png'
@@ -14,15 +15,14 @@ import padlockIcon from '../images/padlock-icon.png'
 
 function CardLogin() {
   return (
-    <div className="principal">
+    <Grid   className="principal">
       <Card className="container" maxWidth="sm"variant="outlined">
-        <CardContent>
-         <img src={padlockIcon}></img>
-         
+        <CardContent className='cont-card'>
+            <img align='center' src={padlockIcon}></img>
           <Typography variant="h5" align="center">
             Ingresar
           </Typography>
-          <form autoComplete="off">
+          <form  autoComplete="off">
             <TextField
               fullWidth
               label="Correo electrónico"
@@ -57,7 +57,7 @@ function CardLogin() {
           </div>
         </CardContent>
       </Card>
-    </div>
+    </Grid>
   );
 }
 

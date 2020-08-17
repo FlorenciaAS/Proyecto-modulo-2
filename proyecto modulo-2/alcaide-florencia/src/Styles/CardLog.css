@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f3ecec;
 
 }
 .container{
@@ -13,9 +12,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cont-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
 }
 
 form{
+    width: 100%;
     margin-bottom: 40px;
     margin-top: 30px;
 }
@@ -35,5 +43,6 @@ form{
    margin:10px 100px 0px 100px;
 }
 hr{
-    border-color:white;
+    border-color:rgb(255, 255, 255);
+    width: 95%;
 }
