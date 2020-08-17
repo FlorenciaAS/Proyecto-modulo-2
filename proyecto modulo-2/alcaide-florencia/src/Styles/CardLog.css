@@ -40,7 +40,11 @@ form{
 }
 
 .button-registre{
-   margin:10px 100px 0px 100px;
+    width: 60%;
+   margin:10px 0px 0px 0px;
+}
+.button-crear{
+    margin:20px 0px 10px 0px;
 }
 hr{
     border-color:rgb(255, 255, 255);

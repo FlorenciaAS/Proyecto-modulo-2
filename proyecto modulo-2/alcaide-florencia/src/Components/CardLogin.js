@@ -41,9 +41,11 @@ function CardLogin() {
             Comenzar a crear playlist
           </Button>
           
-          <Button color="primary" size="small" fullWidth>
+          <div className="button-crear">
+          <Button  color="primary" size="small" fullWidth>
             ¿Has olvidado la contraseña?
           </Button>
+          </div>
           <hr />
           
           <Button disabled size="large" fullWidth>
