@@ -1,0 +1,11 @@
+.container-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+
+}
+.img-nav{
+    margin-right: 10px;
+    width: 30px;
+}
