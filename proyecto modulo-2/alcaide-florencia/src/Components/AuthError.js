@@ -3,11 +3,9 @@ import {
   Card,
   CardContent,
   Typography,
-  CardMedia,
 } from "@material-ui/core";
 import '../Styles/AuthErrror.css';
 import LoginNavbar from '../Components/LoginNavbar'
-import padlockIcon from '../images/padlock-icon.png'
 import { makeStyles} from '@material-ui/core/styles';
 
 
@@ -27,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   
 }));
 
-export default function MediaControlCard() {
+export default function AuthError() {
   const classes = useStyles();
 
   return (

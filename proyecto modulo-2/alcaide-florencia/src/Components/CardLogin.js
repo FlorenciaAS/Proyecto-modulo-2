@@ -10,7 +10,7 @@ import {
 import "../Styles/CardLog.css";
 import padlockIcon from "../images/padlock-icon.png";
 
-function CardLogin() {
+function CardLogin(props) {
   return (
     <Grid className="principal">
       <Card className="container" maxWidth="sm" variant="outlined">
@@ -24,6 +24,8 @@ function CardLogin() {
               fullWidth
               label="Correo electrónico"
               variant="outlined"
+              value={props.inputEmail}
+              onChange={props.showEmail}
             />
             <div className="text">
               <TextField
@@ -31,10 +33,13 @@ function CardLogin() {
                 label="Contraseña"
                 variant="outlined"
                 type="password"
+                value={props.inputPassword}
+                onChange={props.showPassword}
               />
             </div>
           </form>
-          <Button variant="contained" fullWidth size="large" color="secondary">
+          <Button variant="contained" fullWidth size="large" 
+          color="secondary" onClick={props.userValidate}>
             Comenzar a crear playlist
           </Button>
 
