@@ -21,7 +21,7 @@ export default function MenuAppBar() {
       <AppBar position="static">
         <Toolbar>
           <img className="img-nav" src={iconMatea}></img>
-          <Typography variant="h6" className={classes.title}>
+          <Typography align='center' variant="h6" className={classes.title}>
             Mateify
           </Typography>
 

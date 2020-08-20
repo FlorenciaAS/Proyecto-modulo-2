@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import userData from '../baseDeDatos/userData.json';
 import CardLogin from '../Components/CardLogin';
+import { useHistory } from "react-router-dom";
+
 
 const ValidateUser= () =>  {
     const [inputEmail, setInputEmail]=useState();
     const [inputPassword, setInputPassword]=useState();
+
     
     const handleShowEmail= (event)=> {
         setInputEmail(event.target.value);
@@ -23,19 +26,22 @@ const ValidateUser= () =>  {
         };
     };
 
-    
+    const history = useHistory();
+
     const userValidate= () => {
         const userFilter= userData.filter(userCheck);
         console.log(userFilter);
         if(userFilter.length > 0){
-            alert("usuario correcto");
+            history.push(`/Playlist/`)
         }else{  
-            alert("no es correcto");
+            history.push(`/AuthError/`)
         }
     };
 
     return(
-        <CardLogin/>
+        <CardLogin handleShowEmail={handleShowEmail}
+        handleShowPassword={handleShowPassword}
+        userValidate={userValidate}/>
     );
 
    

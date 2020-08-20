@@ -25,24 +25,29 @@ const useStyles = makeStyles((theme) => ({
   
 }));
 
-export default function AuthError() {
+ function AuthError() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-          <img src={padlockIcon} className={classes.cover}></img>
+    <div>
+    <LoginNavbar/>
 
-      
-        <CardContent className={classes.content}>
-          <Typography variant="h4">
-          Mmm... algo no salió bien
-          </Typography>
-          <Typography variant="h8" >
-          Debes estar autenticado para acceder a esta página
-          </Typography>
-        </CardContent>
-      
-        </Card>
+      <Card className={classes.root}>
+            
+
+        
+          <CardContent className={classes.content}>
+            <Typography variant="h4">
+            Mmm... algo no salió bien
+            </Typography>
+            <Typography variant="h8" >
+            Debes estar autenticado para acceder a esta página
+            </Typography>
+          </CardContent>
+        
+          </Card>
+    </div>
   );
 }
+export default AuthError;
 
