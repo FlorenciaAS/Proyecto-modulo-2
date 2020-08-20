@@ -6,11 +6,12 @@ import {
   Typography,
   TextField,
   Grid,
+  Divider,
 } from "@material-ui/core";
 import "../Styles/CardLog.css";
 import padlockIcon from "../images/padlock-icon.png";
 
-function CardLogin(props) {
+function CardLogin (props) {
   return (
     <Grid className="principal">
       <Card className="container" maxWidth="sm" variant="outlined">
@@ -22,19 +23,22 @@ function CardLogin(props) {
           <form autoComplete="off">
             <TextField
               fullWidth
+              name='email'
               label="Correo electrónico"
+              type='email'
               variant="outlined"
               value={props.inputEmail}
-              onChange={props.showEmail}
+              onChange={props.handleShowEmail}
             />
             <div className="text">
               <TextField
                 fullWidth
+                name='password'
                 label="Contraseña"
                 variant="outlined"
                 type="password"
                 value={props.inputPassword}
-                onChange={props.showPassword}
+                onChange={props.handleShowPassword}
               />
             </div>
           </form>
@@ -48,7 +52,7 @@ function CardLogin(props) {
               ¿Has olvidado la contraseña?
             </Button>
           </div>
-          <hr />
+          <Divider className='hr'  orientation="horizontal" />
 
           <Button disabled size="large" fullWidth>
             ¿NO TIENES CUENTA?

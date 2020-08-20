@@ -1,8 +1,9 @@
-.container-nav{
+
+.nav{
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Righteous', cursive;
 
 }
 .img-nav{

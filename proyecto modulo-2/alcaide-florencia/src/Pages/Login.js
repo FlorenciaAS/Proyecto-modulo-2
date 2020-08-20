@@ -8,8 +8,6 @@ function Login(){
         <div>
             <LoginNavbar/>
             <ValidateUser/>
-            
-
         </div>
     )
 }

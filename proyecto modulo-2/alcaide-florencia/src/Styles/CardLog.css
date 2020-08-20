@@ -46,7 +46,6 @@ form{
 .button-crear{
     margin:20px 0px 10px 0px;
 }
-hr{
-    border-color:rgb(255, 255, 255);
+.hr{
     width: 95%;
 }

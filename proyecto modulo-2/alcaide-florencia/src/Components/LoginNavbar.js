@@ -7,14 +7,16 @@ import "../Styles/NavbarLogin.css";
 
 function LoginNavbar() {
   return (
-    <AppBar className="container-nav" position="static">
-      <Toolbar>
-        <img className="img-nav" src={iconMatea}></img>
-        <Typography variant="h5" align="center">
-          Mateify
-        </Typography>
-      </Toolbar>
-    </AppBar>
+    <div className='cont'>
+      <AppBar className="nav" position="static">
+        <Toolbar>
+          <img className="img-nav" src={iconMatea}></img>
+          <Typography variant="h5" align="center">
+            Mateify
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 }
 export default LoginNavbar;
