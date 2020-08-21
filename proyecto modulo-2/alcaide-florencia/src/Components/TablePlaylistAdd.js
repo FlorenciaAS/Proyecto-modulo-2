@@ -1,20 +1,6 @@
-import React from "react";
-import {
-  Box,
-  IconButton,
-  InputBase,
-  Paper,
-  Table,
-  TableRow,
-  TableHead,
-  TableCell,
-  TableBody,
-} from "@material-ui/core";
-import SearchIcon from "@material-ui/icons/Search";
-import "../Styles/TablePlaylis.css";
+import React from 'react';
 
-function TablePlaylist() {
-  return (
+function TablePlaylistAdd(){
     <div>
       <div className="search-cont">
         <Box className="box-cont">
@@ -43,8 +29,8 @@ function TablePlaylist() {
           </Table>
         </Paper>
       </div>
-
     </div>
-  );
-}
-export default TablePlaylist;
+
+};
+
+export default TablePlaylistAdd;

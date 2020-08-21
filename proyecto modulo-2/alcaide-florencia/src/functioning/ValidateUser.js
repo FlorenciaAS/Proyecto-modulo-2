@@ -32,9 +32,9 @@ const ValidateUser= () =>  {
         const userFilter= userData.filter(userCheck);
         console.log(userFilter);
         if(userFilter.length > 0){
-            history.push(`/Playlist/`)
+            history.push(`/Playlist/`);
         }else{  
-            history.push(`/AuthError/`)
+            history.push(`/AuthError/`);
         }
     };
 

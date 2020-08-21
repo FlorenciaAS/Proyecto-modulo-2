@@ -1,3 +1,4 @@
+
 .search-cont{
     display: flex;
     justify-content: center;
@@ -15,6 +16,10 @@
 }
 
 .table-cont{
-    width: 80em;
+    width:75em;
     margin: 0px 10px 0px 10px;
+    padding: 0px 30px 0px 30px;
 }
+
+
+
