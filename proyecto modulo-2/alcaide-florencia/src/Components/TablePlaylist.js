@@ -40,6 +40,15 @@ function TablePlaylist() {
                 <TableCell align="center">Agregar</TableCell>
               </TableRow>
             </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableCell >fevdev</TableCell>
+                <TableCell align='center'>veveve</TableCell>
+                <TableCell align='center'>sdfesf</TableCell>
+                <TableCell align='center'>feffef</TableCell>
+                <TableCell align='center'>fefefefe</TableCell>
+              </TableRow>
+            </TableBody>
           </Table>
         </Paper>
       </div>

@@ -1,35 +1,34 @@
 import React from 'react';
+import {
+    Paper,
+    Table,
+    TableRow,
+    TableHead,
+    TableCell,
+  } from "@material-ui/core";
+  import '../Styles/TablePlaylistAdd.css';
+
 
 function TablePlaylistAdd(){
-    <div>
-      <div className="search-cont">
-        <Box className="box-cont">
-          <Paper variant="outlined" component="form">
-            <IconButton aria-label="search">
-              <SearchIcon />
-            </IconButton>
-            <InputBase placeholder="Buscar" />
-          </Paper>
-        </Box>
-      </div>
-
-      <div className='cont-table'>
-        <Paper className='table-cont' >
-          <Table aria-label="simple table"  variant='outlined'>
-            <TableHead >
-            <h4>Resultados</h4>
-              <TableRow>
-                <TableCell >Nombre</TableCell>
-                <TableCell align="center">Artista</TableCell>
-                <TableCell align="center">Álbum</TableCell>
-                <TableCell align="center">Duración</TableCell>
-                <TableCell align="center">Agregar</TableCell>
-              </TableRow>
-            </TableHead>
-          </Table>
-        </Paper>
-      </div>
-    </div>
+    return(
+        <div className='cont-table-add'>
+            <Paper className='table-cont-add' >
+            <Table  aria-label="simple table"  variant='outlined'>
+                <TableHead >
+                <h4>Tu Playlist</h4>
+                <TableRow>
+                    <TableCell align="left" >Nombre</TableCell>
+                    <TableCell align="left">Artista</TableCell>
+                    <TableCell align="left">Duración</TableCell>
+                    <TableCell align="left">Cant. Votos</TableCell>
+                    <TableCell align="left">Votar</TableCell>
+                </TableRow>
+                </TableHead>
+            </Table>
+            </Paper>
+        </div>
+        
+    );
 
 };
 
