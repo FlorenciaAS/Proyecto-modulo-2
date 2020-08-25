@@ -4,11 +4,7 @@ import {
   IconButton,
   InputBase,
   Paper,
-  Table,
-  TableRow,
-  TableHead,
-  TableCell,
-  TableBody,
+  
 } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import "../Styles/TablePlaylis.css";
@@ -23,7 +19,6 @@ function TablePlaylist(props) {
               <SearchIcon />
             </IconButton>
             <InputBase
-              name="song"
               placeholder="Buscar"
               onChange={props.handleInputChange}
               value={props.inputValue}

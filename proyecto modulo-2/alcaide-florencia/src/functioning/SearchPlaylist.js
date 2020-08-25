@@ -6,18 +6,18 @@ import {
   TableCell,
   TableBody,
   Paper,
+  Avatar,
 } from "@material-ui/core";
 import '../Styles/searchPlaylist.css';
 import songData from "../baseDeDatos/songData.json";
 import TablePlaylist from "../Components/TablePlaylist";
+import AddCircleRoundedIcon from '@material-ui/icons/AddCircleRounded';
 
 const SearchPlaylist = () => {
   const [inputValue, setInputValue] = useState("");
   const [tableFilter, setTableFilter] = useState([]);
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
+ 
 
   const filterSong = (song) => {
     if (song.name.includes(inputValue)) {
@@ -27,13 +27,19 @@ const SearchPlaylist = () => {
     }
   };
 
+  const handleInputChange = (e) => {    
+    setInputValue(e.target.value);
+    
+  };
+
   const handleInputKeyPress = (e) => {
     if (e.key === "Enter") {
-      const results = songData.filter(filterSong);
-
-      setTableFilter(results);
+      const result = songData.filter(filterSong);
+      
+      setTableFilter(result);
     }
   };
+
 
   return (
     <div>
@@ -45,31 +51,34 @@ const SearchPlaylist = () => {
 
       <div className="cont-table">
           <Paper className="table-cont">
+             <h4>Resultados</h4>
             <Table aria-label="simple table" variant="outlined">
               <TableHead>
-                <h4>Resultados</h4>
+               
                 <TableRow>
                   <TableCell>Nombre</TableCell>
-                  <TableCell align="center">Artista</TableCell>
-                  <TableCell align="center">Álbum</TableCell>
-                  <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center">Agregar</TableCell>
+                  <TableCell align="left">Artista</TableCell>
+                  <TableCell align="left">Álbum</TableCell>
+                  <TableCell align="left">Duración</TableCell>
+                  <TableCell align="left">Agregar</TableCell>
                 </TableRow>
               </TableHead>
           
-              {
-              tableFilter.map((song) => (
+             
               <TableBody >
+              {
+              tableFilter.map((song) => ( 
               <TableRow key={song.uuid}>
                 <TableCell>{song.name}</TableCell>
-                <TableCell align="center">{song.artist.name}</TableCell>
-                <TableCell align="center">{song.album}</TableCell>
-                <TableCell align="center">{song.duration}</TableCell>
-                <TableCell align="center"></TableCell>
+                <TableCell align="left">{song.artist.name}</TableCell>
+                <TableCell align="left">{song.album}</TableCell>
+                <TableCell align="left">{song.duration}</TableCell>
+                <TableCell align="left"><AddCircleRoundedIcon color='secondary'/></TableCell>
               </TableRow>
-            </TableBody>
-              ))
+                 ))
             }
+            </TableBody>
+           
             </Table>
           </Paper>
         </div>
