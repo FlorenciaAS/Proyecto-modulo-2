@@ -3,8 +3,8 @@
 .cont-table-add{
     display: flex;
     justify-content: center;
-    background-color:rgb(250, 245, 245);
     margin-top: 20px;
+    height: 20em;
 }
 
 .table-cont-add{

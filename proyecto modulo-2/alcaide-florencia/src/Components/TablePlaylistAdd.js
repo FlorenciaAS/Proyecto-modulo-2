@@ -5,11 +5,12 @@ import {
     TableRow,
     TableHead,
     TableCell,
+    TableBody,
   } from "@material-ui/core";
   import '../Styles/TablePlaylistAdd.css';
 
 
-function TablePlaylistAdd(){
+function TablePlaylistAdd(props){
     return(
         <div className='cont-table-add'>
             <Paper className='table-cont-add' >
@@ -25,6 +26,16 @@ function TablePlaylistAdd(){
                     <TableCell align="left">Votar</TableCell>
                 </TableRow>
                 </TableHead>
+
+                <TableBody >
+              <TableRow>
+                <TableCell></TableCell>
+                <TableCell align="left"></TableCell>
+                <TableCell align="left"></TableCell>
+                <TableCell align="left"></TableCell>
+                <TableCell align="center"></TableCell>
+              </TableRow>
+            </TableBody>
             </Table>
             </Paper>
         </div>

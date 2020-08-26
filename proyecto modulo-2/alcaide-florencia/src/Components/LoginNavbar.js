@@ -5,6 +5,9 @@ import { Typography } from "@material-ui/core";
 import iconMatea from "../images/LogoSoloBlancoFondoTransparente 1.png";
 import "../Styles/NavbarLogin.css";
 
+
+
+
 function LoginNavbar() {
   return (
     <div className='cont'>
@@ -16,6 +19,7 @@ function LoginNavbar() {
           </Typography>
         </Toolbar>
       </AppBar>
+
     </div>
   );
 }

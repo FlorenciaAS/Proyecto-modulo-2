@@ -14,8 +14,9 @@ import TablePlaylist from "../Components/TablePlaylist";
 import AddCircleRoundedIcon from '@material-ui/icons/AddCircleRounded';
 
 const SearchPlaylist = () => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState();
   const [tableFilter, setTableFilter] = useState([]);
+  const [click, setClick]= useState();
 
  
 
@@ -39,6 +40,11 @@ const SearchPlaylist = () => {
       setTableFilter(result);
     }
   };
+
+  const handleAgregarClick =(e, song, result)=>{
+    console.log('Se ejecuta el handleAgregarClick')
+    
+  }
 
 
   return (
@@ -69,19 +75,23 @@ const SearchPlaylist = () => {
               {
               tableFilter.map((song) => ( 
               <TableRow key={song.uuid}>
-                <TableCell>{song.name}</TableCell>
+                <TableCell><Avatar src={song.artist.coverUrl}/> 
+                {song.name}</TableCell>
                 <TableCell align="left">{song.artist.name}</TableCell>
                 <TableCell align="left">{song.album}</TableCell>
                 <TableCell align="left">{song.duration}</TableCell>
-                <TableCell align="left"><AddCircleRoundedIcon color='secondary'/></TableCell>
+                <TableCell align="left"><AddCircleRoundedIcon
+                 onClick={(e) => handleAgregarClick(e, song)}
+                  color='secondary'/></TableCell>
               </TableRow>
-                 ))
-            }
+                 ))}
             </TableBody>
            
             </Table>
           </Paper>
         </div>
+
+        
       </div>
   );
 };
