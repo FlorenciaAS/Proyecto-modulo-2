@@ -1,7 +1,6 @@
 import React from 'react';
 import PlaylistNavbar from '../Components/PlaylistNavbar';
 import SearchPlaylist from '../functioning/SearchPlaylist';
-import TablePlaylistAdd from '../Components/TablePlaylistAdd';
 
 
 function Playlist (){
@@ -9,7 +8,6 @@ function Playlist (){
         <div>
             <PlaylistNavbar/>
             <SearchPlaylist/>
-            <TablePlaylistAdd/>
         </div>
     );
 };

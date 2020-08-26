@@ -2,7 +2,6 @@
 .search-cont{
     display: flex;
     justify-content: center;
-    background-color:rgb(250, 245, 245);
 }
 .box-cont{
     width: 45em;
