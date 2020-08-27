@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import userData from '../baseDeDatos/userData.json';
 import CardLogin from '../Components/CardLogin';
+import AuthError from '../Components/AuthError';
 import { useHistory } from "react-router-dom";
 
 

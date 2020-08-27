@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, Avatar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import { AppBar, Avatar, Box, Toolbar, Typography, IconButton } from "@material-ui/core";
 import iconMatea from "../images/LogoSoloBlancoFondoTransparente 1.png";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import '../Styles/NavbarPlaylist.css'
@@ -23,9 +23,10 @@ export default function MenuAppBar() {
       <AppBar className='navPlay' position="static">
         <Toolbar>
           <img className="img-nav" src={iconMatea}></img>
-          <Typography align='center' variant="h6" className={classes.title}>
+          
+          <Box className={classes.title}  fontFamily="Righteous" fontSize={28}  align="center">
             Mateify
-          </Typography>
+          </Box>
 
           <div>
             <IconButton>

@@ -33,9 +33,6 @@ const useStyles = makeStyles((theme) => ({
     <LoginNavbar/>
 
       <Card className={classes.root}>
-            
-
-        
           <CardContent className={classes.content}>
             <Typography variant="h4">
             Mmm... algo no salió bien
